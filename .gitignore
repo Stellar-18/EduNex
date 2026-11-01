@@ -1,0 +1,39 @@
+# --- secrets ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+
+# Stored API key material and the SQLite database
+backend/data/
+backend/.venv/
+
+# --- uploaded study material ----------------------------------------------
+uploads/*
+!uploads/.gitkeep
+
+# --- python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+server.log
+*.pid
+
+# --- node / vite ----------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/dev.log
+*.local
+
+# --- editors / OS ---------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- freebuff -------------------------------------------------------------
+.freebuff/
